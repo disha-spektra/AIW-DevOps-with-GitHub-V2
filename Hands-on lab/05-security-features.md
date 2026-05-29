@@ -2,6 +2,12 @@
 
 ### Estimated Duration: 120 Minutes
 
+## Scenario
+
+You are part of the security operations team at Contoso Traders, where protecting application code and identifying vulnerabilities are essential to maintaining secure development practices. In this exercise, you will use GitHub Advanced Security features to analyze repositories for security risks, monitor dependency vulnerabilities, and review automated security alerts. You will also explore security advisory management and secret scanning capabilities to help strengthen repository security and improve overall code protection.
+
+## Overview
+
 In this exercise, you'll explore GitHub Enterprise features, which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.
 
 ## Lab Objectives
@@ -37,9 +43,9 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/E3T1S4.png)
 
-1. Navigate to **Security (1)** tab and click on **View alerts (2)** for Code scanning alerts.
+1. Navigate to **Security and quality (1)** tab and click on **View alerts (2)** for Code scanning alerts.
 
-   ![](media/E3T1S5.png)
+   ![](media/so.png)
 
 1. You will be navigated to the **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
 
@@ -49,9 +55,9 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository. Anyone with admin permissions to a repository can create a security advisory.
 
-1. Navigate to **Security** **(1)** tab, select **Advisories** **(2)** from the side blade and click on **New draft security advisory** **(3)**.
+1. Navigate to **Security and quality** **(1)** tab, select **Advisories** **(2)** from the side blade and click on **New draft security advisory** **(3)**.
 
-   ![](media/E3T2S1.png)
+   ![](media/so-1.png)
 
 1. In the Open a draft security advisory tab, under the Advisory Details section, provide the following details.
 
@@ -129,9 +135,9 @@ In this task, you will use Dependabot to track the versions of the packages we u
    
    > **Note:** The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts being present. You can continue with the next exercise, as this is an independent task and doesn't affect the lab. Please visit this task later and complete the task.
 
-1. To observe Dependabot issues, navigate to the **Security** **(1)** tab and select the **View Dependabot alerts** **(2)** link.
+1. To observe Dependabot issues, navigate to the **Security and quality** **(1)** tab and select the **View Dependabot alerts** **(2)** link.
 
-   ![GitHub Dependabot alerts in the Security tab.](media/E3T3S2.png "GitHub Dependabot alerts")
+   ![GitHub Dependabot alerts in the Security tab.](media/so-2.png "GitHub Dependabot alerts")
 
 1. You should arrive at the `Dependabot alerts` blade in the `Security` tab.
 
@@ -144,10 +150,12 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. Click on **Create Dependabot security update (1)**. After the creation, click on **Review security update (2)** to review.
 
    ![The `handlebars` Dependabot alert detail.](media/E3T3S5.png "Dependabot alert detail")
+   
+   >**Note:** This process may take a few minutes to complete.
 
    ![The `handlebars` Dependabot alert detail.](media/E3T3S5-1.png "Dependabot alert detail")
 
-1. You will be navigate to the **Pull requests** **(1)** tab, find the Dependabot security patch pull request **(2)** and merge it to your main branch.
+1. You will be navigated to the **Pull requests** **(1)** tab, find the Dependabot security patch pull request **(2)** and merge it to your main branch.
 
    ![List of Pull Requests.](media/E3T3S6.png "Pull Requests")
 

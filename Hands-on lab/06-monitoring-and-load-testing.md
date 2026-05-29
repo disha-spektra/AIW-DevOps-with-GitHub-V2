@@ -2,6 +2,14 @@
 
 ### Estimated Duration: 120 minutes
 
+## Scenario
+
+You are part of the Site Reliability Engineering (SRE) team at Contoso Traders, responsible for ensuring application performance, availability, and resilience in the cloud environment. In this exercise, you will monitor application health and usage metrics using Azure Application Insights, perform load testing to evaluate scalability under simulated traffic, and explore Azure Chaos Studio to test how the application responds to real-world failures. 
+
+These activities help validate system reliability, improve performance monitoring, and strengthen operational resilience.
+
+## Overview
+
 In this exercise, we will add monitoring and logging to gain insight on the application's usage in the cloud. Then create Azure load testing, which is a fully managed load-testing service that enables you to generate high-scale loads. The service simulates traffic for your applications, regardless of where they're hosted. Developers, testers, and quality assurance (QA) engineers can use it to optimise application performance, scalability, or capacity. We will also explore Azure Chaos Studio, which helps you measure, understand, and improve your cloud application and service resilience.
 
 ## Lab Objectives
@@ -44,13 +52,13 @@ This task focuses on using Azure Application Insights to monitor the health and 
 
 In this task, you'll create an Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** resource group and select the **Endpoint** resource with the name **contoso-traders-ui2<inject key="Deploymentid" />**.
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** resource group and select the **Front Door** resource with the name **contoso-traders-cdn<inject key="Deploymentid" />**.
 
-   ![](media/E1T4S21.png)
+   ![](media/lt.png)
 
-1. From the overview of **contoso-traders-ui2<inject key="Deploymentid" enableCopy="false" />** endpoint, copy the **Endpoint hostname** and paste it into the notepad for later use in the task.
+1. From the overview of **contoso-traders-cdn<inject key="Deploymentid" enableCopy="false" />** CDN, copy the **Endpoint hostname** and paste it into the notepad for later use in the task.
 
-   ![](media/E1T4S22.png)
+   ![](media/lt-2.png)
 
 1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Azure Load Testing** resource with the name **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
@@ -66,13 +74,17 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    ![](media/E4T2S6-1.png)
 
-   ![](media/E4T2S6-2.png)
+   >**Note**: Include "**https://**" at the starting of the URL, and paste the **Endpoint URL**.
+
+   ![](media/lt-4.png)
 
 1. Click on **Review + create** and click on **Create**.
 
 1. The test run will start running, and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
-   ![](media/E4T2S8.png)
+   >**Note**: It will take 20 minutes for the test to complete.
+   
+   ![](media/t.png)
 
    ![](media/E4T2S8-1.png)
 

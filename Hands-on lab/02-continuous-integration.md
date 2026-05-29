@@ -2,6 +2,14 @@
 
 ### Estimated Duration: 120 Minutes
 
+## Scenario
+
+You are a DevOps engineer at Contoso Traders responsible for implementing a modern CI/CD pipeline for the company’s retail application. In this exercise, you will configure GitHub Actions workflows to automate application build, testing, and deployment to Azure services. You will also use GitHub Codespaces to update workflow files, manage Docker image publishing, and validate successful deployments through Azure-hosted resources. 
+
+By the end of the exercise, you will have established an automated deployment process that improves development efficiency, consistency, and release reliability.
+
+## Overview
+
 In this exercise, you are going to set up the local infrastructure using dotnet. There are three parts of the application you will be working with: carts, products, and UI. You will deploy the infrastructure to cloud using GitHub Actions. You will also build automation in GitHub for updating and republishing our workflows when the code changes.
 
 ## Lab Objectives
@@ -52,7 +60,7 @@ In this task, you will set up the local infrastructure using .NET. You'll be wor
 
 1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** to get the **Application Id (Client ID)**, **Secret Key (Client Secret)**, and **Tenant ID (Directory ID)**.
 
-   ![](media/E1T2S3-new.png)
+   ![](media/env-2.png)
 
 1. The **Application ID (Client ID)**, **Secret Key (Client Secret)**, and **Tenant ID** are already injected in the command mentioned below. Verify the values once and run it in the terminal.
 
@@ -179,7 +187,7 @@ In this task, access the GitHub Enterprise account), create a new repository to 
 
 1. In a new browser tab, open `https://www.github.com/login`. From **Environment** page, navigate to **Licenses** tab and **Copy** the credentials. Use the same username and password to login into GitHub.
 
-   ![](media/E1T3S1.png)
+   ![](media/env-new-1.png)
 
 1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window, and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
@@ -199,7 +207,7 @@ In this task, access the GitHub Enterprise account), create a new repository to 
 
 1. On the **Create a new repository** screen, name the repository **aiw-devops-with-github-lab-files (1)**, select **Public (2)** and click on **Create repository (3)** button.
 
-   ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-new.png "New Repository Creation Form")
 
    > **Note:** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the steps given below. Else, skip to step 6.
       
@@ -257,7 +265,7 @@ In this task, access the GitHub Enterprise account), create a new repository to 
 
    ![](media/2dgn72.png)
 
-   Run the below-mentioned command in the terminal. Make sure to replace your_github_repository-url with the value you copied in step 11 and Unique-ID in step 12.
+   Run the below-mentioned command in the terminal. Make sure to replace your_github_repository-url with the value you copied in step 6 and Unique-ID in step 7.
 
    **Note:** This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1.
 
@@ -335,7 +343,7 @@ In this task, you will build automation in GitHub for updating and republishing 
 
 1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id (Client Id)** and **Secret Key (Client Secret)**.
 
-   ![](media/E1T4S8.png)
+   ![](media/env-3.png)
 
    - Replace the values that you copied in below Json. You will be using them in this step.
 
@@ -366,7 +374,7 @@ In this task, you will build automation in GitHub for updating and republishing 
 
     ![](media/E1T4S11upd.png)
 
-   > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform step 14 of Task 3 again. 
+   > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform step 10 of Task 3 again. 
 
 1. Navigate back to the Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the Docker image, which is pushed to the container registry. The same image is pushed to the Azure container application.
 
@@ -453,7 +461,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    > **Note:** In case you recieve a pop-up, click on **Allow** then click on **Continue** and then **Open** to authorize Github login.
 
-   > **Note:** In case the Visula Studio Code pop-up does not show up, you can continue with codespaces in the web page.
+   > **Note:** In case the Visual Studio Code pop-up does not show up, you can continue with codespaces in the web page.
 
 4. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
