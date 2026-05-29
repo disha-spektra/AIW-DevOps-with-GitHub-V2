@@ -2,6 +2,14 @@
 
 ### Estimated Duration: 120 Minutes
 
+## Scenario
+
+You are part of the DevOps team at Contoso Traders, where efficient project tracking and quality assurance are critical to delivering reliable application updates. In this exercise, you will connect Azure Boards with GitHub to streamline work item management and improve collaboration between developers and testers. 
+
+You will also configure Azure Test Plans to create, execute, and monitor manual test cases, ensuring application features are validated before deployment.
+
+## Overview
+
 In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools that everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
 
 ## Lab Objectives
@@ -92,7 +100,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/E2T2S2.png)
 
-1. Select the **Code** **(1)** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
+1. Select the **Code** **(1)** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** **(2)** and select **contoso-traders-provisioning-deployment-old.yml** **(3)** file.
 
    ![](media/E2T2S3upd.png)
 
@@ -148,6 +156,13 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E2T3S1.png)
 
+
+    >**Note:** If you are unable to see **Test plans**, follow the steps below:
+   
+    - Click on **Project Settings (1)**, then select **Overview (2)**, and turn the **Test plans (3)** option to **On**.
+
+      ![](media/ad-new-1.png)
+    
     >**Note:** If you are unable to See **+ New Test Plan** option then please follow below steps:
 
     - From the top select **Azure DevOps** then click on **Organization settings (2)**.
@@ -233,7 +248,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
 1. You'll be able to visualize the chart. You can explore more by making changes in the chart and by running multiple test cycles.
 
-   ![](media/E2T3S17.png)
+   ![](media/E2T3S17-1.png)
 
 ## Summary
 

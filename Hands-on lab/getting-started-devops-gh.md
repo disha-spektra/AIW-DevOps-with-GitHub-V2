@@ -2,7 +2,14 @@
 
 ### Overall Estimated Duration: 8 Hours
 
-## Overview
+## Lab Scenario
+
+A retail company, Contoso Traders, wants to modernize its application delivery process by implementing DevOps practices using GitHub and Azure services. The development team needs to build and deploy .NET-based microservices, automate CI/CD pipelines with GitHub Actions, and integrate Azure Boards for project tracking and testing. To improve application security and reliability, the organization also plans to enable GitHub Advanced Security features, perform load testing, monitor application performance using Application Insights, and simulate failures using Azure Chaos Studio. 
+
+This lab helps participants gain hands-on experience in automating deployments, securing repositories, monitoring cloud applications, and validating system resilience in a real-world DevOps environment.
+
+
+## Lab Overview
 
 In this Hands-on lab, you will set up local infrastructure using .NET and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
 
@@ -55,7 +62,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![](media/gg_2.png)
+   ![](media/env-1.png)
 
 ## Utilizing the Split Window Feature
  
